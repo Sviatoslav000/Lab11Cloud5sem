@@ -29,8 +29,8 @@ pipeline {
                     )
                 ]) {
                     sh 'echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin'
-                    sh 'docker tag peninaapp:latest $DOCKER_USER/peninaapp:latest'
-                    sh 'docker push $DOCKER_USER/peninaapp:latest'
+                    sh 'docker tag peninaapp:latest $DOCKER_USER/yablonskyirepo:latest'
+                    sh 'docker push $DOCKER_USER/yablonskyirepo:latest'
                 }
             }
         }
